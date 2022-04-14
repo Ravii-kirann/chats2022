@@ -25,4 +25,4 @@ connection.end();
  app.use(urlencoded({extended: false}));
 
  app.use("/users",userRouter);
- app.listen(5000);
+ app.listen(process.env.PORT||5000);
